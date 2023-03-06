@@ -74,14 +74,18 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-
-//	@Override
-//	public String toString() {
-//		
-//	}
 	
+	/**
+	 * Object 최상위 부모 상속 오버라이딩
+	 */
+	@Override
+	public String toString() {
+		return name+"의 나이는 "+age;
+	} 
+	
+	/**
+	 */
 	public void printInfo() {
-		
-		System.out.println(name+"의 나이는 " + age);
+		System.out.println(name+"의 나이는 " + age);//처리속도 60ms, 메모리 60ns -> 100만배 느림...
 	}
 }
