@@ -25,8 +25,8 @@ public class Person {
 	
 	/**
 	 * person 객체 생성자2
-	 * @param name
-	 * @param age
+	 * @param String name
+	 * @param int age
 	 */
 	public Person(String name, int age) {
 		super();
@@ -48,5 +48,14 @@ public class Person {
 
 	public void setAge(int age) {
 		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return name+"의 나이는 " + age;
+	}
+	
+	public void printInfo() {
+		System.out.println(this.toString());
 	}
 }
