@@ -16,7 +16,7 @@ public class Person {
 //	private boolean gender;
 
 	/**
-	 * 인스턴스 변수, 힙 공간에 있음
+	 * 인스턴스 (멤버) 변수, 힙 공간에 있음
 	 */
 	private String name;
 	private int age;

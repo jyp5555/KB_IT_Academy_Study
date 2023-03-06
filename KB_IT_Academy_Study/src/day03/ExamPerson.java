@@ -8,14 +8,21 @@ public class ExamPerson {
 		 * 메소드 변수  tempPerson
 		 * @author student
 		 */
-		Person tempPerson;
-		tempPerson = new Person("김철수", 20);
+		Person tempPerson1;
+//		System.out.println(tempPerson1.getAge()); => may not have initialized (선언만 함, 명시적 초기화 필요)
+		tempPerson1 = new Person("김철수", 20);
 		
-		System.out.println(tempPerson.getName() +" || "+ tempPerson.getAge());
+		System.out.println(tempPerson1.getName() +" || "+ tempPerson1.getAge());
 		
-		tempPerson.setName("홍길동");
-		tempPerson.setAge(21);
+		tempPerson1.setName("홍길동");
+		tempPerson1.setAge(21);
 		
-		System.out.println(tempPerson.getName() +" || "+ tempPerson.getAge());
+		System.out.println(tempPerson1.getName() +" || "+ tempPerson1.getAge());
+		
+		/**
+		 * tempPerson1,2 은 서로 다름
+		 */
+		Person tempPerson2 = new Person("김영희",22);
+//		Person tempPerson3 = new Person(); tempPerson3.name = null, tempPerson3.age = 0
 	}
 }
