@@ -3,7 +3,7 @@ package day03;
 public class PracCalc {
 
 	public static void main(String[] args) {
-		Calc calc = new Calc();
+		Calc calc = new Calc();//생성자 호출
 		
 		int answer1 = calc.plus(5,5);
 		int answer2 = calc.minus(3,5);
@@ -12,6 +12,5 @@ public class PracCalc {
 		System.out.println(answer1+"");
 		System.out.println(answer2+"");
 		System.out.println(answer3+"");
-
 	}
 }

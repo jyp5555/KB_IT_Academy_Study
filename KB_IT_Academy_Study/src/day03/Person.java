@@ -21,6 +21,12 @@ public class Person {
 	private String name;
 	private int age;
 	
+	/**
+	 * person 객체 생성자1 기본생성자
+	 * 생성자는 클래스 명과 동일, 리턴 타입 없음
+	 * 생성자 없으면 컴파일러가 일단 기본 생성자를 띄움
+	 * 만약 파라미터 사용한 생성자가 있으면, 기본 생성자를 띄우지 않음...
+	 */
 	public Person() {}
 	
 	/**
@@ -29,6 +35,17 @@ public class Person {
 	 * @param int age
 	 */
 	public Person(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+
+	/**
+	 * person 객체 생성자3
+	 * @param age
+	 * @param name
+	 */
+	public Person(int age, String name) {
 		super();
 		this.name = name;
 		this.age = age;
