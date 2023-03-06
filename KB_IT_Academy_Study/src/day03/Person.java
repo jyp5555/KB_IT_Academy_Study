@@ -36,6 +36,10 @@ public class Person {
 	 */
 	public Person(String name, int age) {
 		super();
+		System.out.println("this는"+ this);
+		/**
+		 * this -> 객체 자신의 시작위치를 가리킴
+		 */
 		this.name = name;
 		this.age = age;
 	}
@@ -46,9 +50,13 @@ public class Person {
 	 * @param name
 	 */
 	public Person(int age, String name) {
-		super();
-		this.name = name;
-		this.age = age;
+		/**
+		 * 다른 생성자 호출
+		 */
+		this(name,age);
+//		super();
+//		this.name = name;
+//		this.age = age;
 	}
 
 	public String getName() {
@@ -67,12 +75,13 @@ public class Person {
 		this.age = age;
 	}
 
-	@Override
-	public String toString() {
-		return name+"의 나이는 " + age;
-	}
+//	@Override
+//	public String toString() {
+//		
+//	}
 	
 	public void printInfo() {
-		System.out.println(this.toString());
+		
+		System.out.println(name+"의 나이는 " + age);
 	}
 }
