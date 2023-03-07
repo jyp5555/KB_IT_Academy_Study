@@ -12,7 +12,6 @@ public class Person {
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getName() {
@@ -33,6 +32,6 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + "]";
+		return "name:" + name + ", age:" + age;
 	}
 }
