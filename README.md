@@ -1,6 +1,6 @@
 # **KB_IT_Academy_Study**
 ---
-## [**자바 기초 (23.03.02 ~ 23.03.08)**](./KB_IT_Academy_Study/src/)
+## [**자바 기초 (23.03.02 ~ 23.03.08)**](./KB_IT_Academy_Study/src/IntroJAVA)
     01. 반복문(for, while)
     02. 기본 데이터타입, 참조 데이터 타입
         String 비교, String pool
