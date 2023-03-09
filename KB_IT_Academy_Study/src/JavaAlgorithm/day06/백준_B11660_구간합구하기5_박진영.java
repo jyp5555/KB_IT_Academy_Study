@@ -13,7 +13,7 @@ public class 백준_B11660_구간합구하기5_박진영 {
 		int N = 0;
 		int M = 0;
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); //bufferReader는 한번만 부르자! Scanner랑 마찬가지로
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		if(st.hasMoreTokens()) N = Integer.parseInt(st.nextToken());
 		if(st.hasMoreTokens()) M = Integer.parseInt(st.nextToken());
