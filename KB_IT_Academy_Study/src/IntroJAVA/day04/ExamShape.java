@@ -1,4 +1,4 @@
-package day04;
+package IntroJAVA.day04;
 
 public class ExamShape {
 //	자바 그림판 제작

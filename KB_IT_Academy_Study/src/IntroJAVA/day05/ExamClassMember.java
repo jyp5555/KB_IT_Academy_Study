@@ -1,4 +1,4 @@
-package day05;
+package IntroJAVA.day05;
 
 public class ExamClassMember {
 

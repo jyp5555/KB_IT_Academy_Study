@@ -1,4 +1,4 @@
-package com.itskb.ws03.dto;
+package IntroJAVA.dto;
 
 public class UserDto {
 	

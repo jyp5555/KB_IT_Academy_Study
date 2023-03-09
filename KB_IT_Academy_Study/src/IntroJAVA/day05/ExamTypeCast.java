@@ -1,4 +1,4 @@
-package day05;
+package IntroJAVA.day05;
 
 import java.io.Console;
 import java.util.logging.Level;

@@ -1,7 +1,7 @@
 /**
  * package: 클래스의 모음
  */
-package day03;
+package IntroJAVA.day03;
 
 /**
  * import : 같은 패키지 안에 있는 것은 필요 없음

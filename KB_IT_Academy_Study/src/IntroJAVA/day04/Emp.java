@@ -1,4 +1,4 @@
-package day04;
+package IntroJAVA.day04;
 
 public class Emp extends Person{
 		

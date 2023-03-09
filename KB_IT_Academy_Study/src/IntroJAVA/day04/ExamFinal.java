@@ -1,4 +1,4 @@
-package day04;
+package IntroJAVA.day04;
 
 import java.util.LinkedList;
 

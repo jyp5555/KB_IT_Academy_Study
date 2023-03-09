@@ -1,4 +1,4 @@
-package day03;
+package IntroJAVA.day03;
 
 public class ExamArray {
 

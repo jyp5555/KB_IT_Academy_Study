@@ -1,4 +1,4 @@
-package day03;
+package IntroJAVA.day03;
 
 /**
  * 사람에 대한 기본 정보 정의<br>
