@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 
 public class ExamPermutation {
 	private static int n, m;
-	private static char[] arr; // 원소를 저장할 배
+	private static int[] arr; // 원소를 저장할 배
 	private static ArrayList<char[]> ansList = new ArrayList<>();
 	private static boolean[] visited; // 중복을 제거하기 위한 방문 처리
 
@@ -22,18 +22,13 @@ public class ExamPermutation {
 		arr1.add(2);
 		arr1.add(3);
 //		getPermutation(arr);
+
         
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        String str = st.nextToken();
-        char[] arr2 = str.toCharArray();
-        int num = Integer.parseInt(st.nextToken());
-        System.out.println(arr2);
-        arr = new char[arr2.length];
-        visited = new boolean[arr2.length + 1];
-        n = arr2.length-1;
-        m = arr2.length-1;
-        permutation(0, arr2);
+        arr = new int[3];
+        visited = new boolean[arr.length + 1];
+        n = arr.length-1;
+        m = arr.length-1;
+        permutation(0);
 	}
 
 	private static int getPermutation(ArrayList<Integer> arr) {
@@ -48,19 +43,20 @@ public class ExamPermutation {
 		return 0;
 	}
 	
-	private static void permutation(int cnt, char[] arr2) {
+	private static void permutation(int cnt) {
+        //종료조건검사
         if (cnt == m) {
-        	arr[cnt] = arr2[m];
             System.out.println(Arrays.toString(arr));
-            ansList.add(arr);
             return;
         }
-        for (int i = 0; i <= n; i++) {
+        //로직처리
+        for (int i = 1; i <= n; i++) {
             if (!visited[i]) {
                 visited[i] = true;
-                arr[cnt] = arr2[i];
-                permutation(cnt + 1, arr2);
-                visited[i] = false; // 다시 방문을 풀어줘야지만 한 번 재귀 끝나고 다시 갈 수 있음
+                arr[cnt] = i;
+                // 같은메서드 호출
+                permutation(cnt + 1);
+                visited[i] = false;
             }
         }
     }

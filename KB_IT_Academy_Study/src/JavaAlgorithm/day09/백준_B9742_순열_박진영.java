@@ -34,11 +34,8 @@ public class 백준_B9742_순열_박진영 {
 		
 		getPermut(0,temp2);
 		String str;
-		try {
-			str = ans.get(n-1);
-		}catch(Exception e) {
-			str = "No permutation";
-		}
+		if(ans.size() < n) str = "No Permutation";
+		else str = ans.get(n-1);
 		
 		System.out.println(temp+" "+n + " = "+ str );
 	}
