@@ -79,7 +79,7 @@ class Land {
 	
 	public Land(int landName) {
 		super();
-		this.landName = landName;
+//		this.landName = landName;
 	}
 }
 
